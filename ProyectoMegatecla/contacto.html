@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Personalizado-->
+
+    <link href="../ProyectoJCSS/index.css" rel="stylesheet" />
+
+    <!--cdn TailwindCSS-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Proyecto Contacto</title>
+  </head>
+  <body>
+    <!--Header-->
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 3h-1v18h1"></path>
+            <path d="M20 21h1v-18h-1"></path>
+            <path d="M7 9v6"></path>
+            <path d="M12 15v-3.5a2.5 2.5 0 1 0 -5 0v.5"></path>
+            <path d="M17 15v-3.5a2.5 2.5 0 1 0 -5 0v.5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Megatecla</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a
+            class="mr-5 hover:text-white"
+            href="../ProyectoJCSS/index.html"
+            rel="noopener noreferrer"
+            target="_self"
+            >Inicio</a
+          >
+          <a
+            class="mr-5 hover:text-white"
+            href="../ProyectoJCSS/productos.html"
+            rel="noopener noreferrer"
+            target="_self"
+            >Productos</a
+          >
+          <a
+            class="mr-5 hover:text-white"
+            href="../ProyectoJCSS/clientes.html"
+            rel="noopener noreferrer"
+            target="_self"
+            >Clientes</a
+          >
+          <a
+            class="mr-5 hover:text-white"
+            href="../ProyectoJCSS/contacto.html"
+            rel="noopener noreferrer"
+            target="_self"
+            >Contáctanos</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!--Contenido-->
+
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+      <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div
+          class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            title="map"
+            class="absolute inset-0"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5346.397272179456!2d-3.6012172495176746!3d37.176783768235175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1682501460992!5m2!1ses!2ses"
+            style="filter: grayscale(1) contrast(1.2) opacity(0.16)"
+          ></iframe>
+          <div
+            class="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md"
+          >
+            <div class="lg:w-1/2 px-6">
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs"
+              >
+                DIRECCIÓN
+              </h2>
+              <p class="mt-1">Andalucía, Granada</p>
+            </div>
+            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs"
+              >
+                CORREO
+              </h2>
+              <a class="text-pink-400 leading-relaxed"
+                >jcssproyecto@gmail.com</a
+              >
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs mt-4"
+              >
+                TELÉFONO
+              </h2>
+              <p class="leading-relaxed">666 666 666</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
+          <h2 class="text-white text-lg mb-1 font-medium title-font">
+            Contáctanos
+          </h2>
+          <p class="leading-relaxed mb-5">
+            Especifique el tema a tratar y contestaremos lo antes posible.
+          </p>
+          <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-400"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-400"
+              >Correo</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-400"
+              >Mensaje</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="w-full bg-gray-800 rounded border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            ></textarea>
+          </div>
+          <button
+            class="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg"
+          >
+            Enviar
+          </button>
+          <p class="text-xs text-gray-400 text-opacity-90 mt-3">
+            Protección de datos y uso único para contactar con usted.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+      >
+        <div
+          class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+        >
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
+              viewBox="0 0 24 24"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 3h-1v18h1"></path>
+              <path d="M20 21h1v-18h-1"></path>
+              <path d="M7 9v6"></path>
+              <path d="M12 15v-3.5a2.5 2.5 0 1 0 -5 0v.5"></path>
+              <path d="M17 15v-3.5a2.5 2.5 0 1 0 -5 0v.5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Megatecla</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Diseño actualizado</p>
+        </div>
+        <div
+          class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
+        >
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-white tracking-widest text-sm mb-3"
+            >
+              CATEGORIAS
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a
+                  class="text-gray-400 hover:text-white"
+                  href="../ProyectoJCSS/index.html"
+                  rel="noopener noreferrer"
+                  target="_self"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-white"
+                  href="../ProyectoJCSS/productos.html"
+                  rel="noopener noreferrer"
+                  target="_self"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-white"
+                  href="../ProyectoJCSS/clientes.html"
+                  rel="noopener noreferrer"
+                  target="_self"
+                  >Clientes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-white"
+                  href="../ProyectoJCSS/contacto.html"
+                  rel="noopener noreferrer"
+                  target="_self"
+                  >Contacto</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-white tracking-widest text-sm mb-3"
+            >
+              ENLACES EXTERNOS
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a
+                  class="text-gray-400 hover:text-white"
+                  href="https://www.behance.net/carlossimns1"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Behance</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75">
+        <div
+          class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+        >
+          <p class="text-gray-400 text-sm text-center sm:text-left">
+            2023 Proyecto Diseño Carlos Simón
+          </p>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+          >
+            <a
+              class="ml-3 text-gray-400"
+              href="https://www.instagram.com/newone_art/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-gray-400"
+              href="https://www.linkedin.com/in/jcarlos-simon/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
